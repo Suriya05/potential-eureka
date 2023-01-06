@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Spartan:wght@400;500;600;700;800&amp;display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Spartan:wght@400;500;600;700;800&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
     --color-primary:#03addc;
     --color-secondary:#03addc;
@@ -19,7 +20,8 @@
     --bg-color-2:#1c242f;
     --color-white:#fff;
     --color-black:#000;
-    --footer-text:#181818;
+    --footer-bg: #041f45;
+    --footer-text:#ffffff;
     --dark-footer-text:gray;
     --edu-btn-color:#fff;
     --color-title:#bababa;
@@ -71,8 +73,8 @@
     --transition:0.3s;
     --transition-2:0.5s;
     --transition-transform:transform .65s cubic-bezier(.23,1,.32,1);
-    --font-primary:'Poppins',sans-serif;
-    --font-secondary:'Spartan',sans-serif;
+    --font-primary: 'Barlow Semi Condensed', 'Poppins',sans-serif;
+    --font-secondary: 'Barlow Semi Condensed', 'Spartan',sans-serif;
     --font-icomoon:'icomoon';
     --font-size-b1:15px;
     --font-size-b2:13px;
@@ -633,7 +635,7 @@
         padding-right:15px!important
     }
 }
-#edublink-preloader {
+#proitbridge-preloader {
     position:fixed;
     top:0;
     left:0;
@@ -646,7 +648,7 @@
     -webkit-transition:all 1.5s ease-out;
     transition:all 1.5s ease-out
 }
-#edublink-preloader.loaded .preloader-close-btn-wraper {
+#proitbridge-preloader.loaded .preloader-close-btn-wraper {
     bottom:200%
 }
 .preloader-close-btn-wraper {
@@ -689,8 +691,8 @@
     position:absolute;
     top:0;
     left:0;
-    -webkit-animation:edublink-preloader-bounce-animation 2.0s infinite ease-in-out;
-    animation:edublink-preloader-bounce-animation 2.0s infinite ease-in-out
+    -webkit-animation:proitbridge-preloader-bounce-animation 2.0s infinite ease-in-out;
+    animation:proitbridge-preloader-bounce-animation 2.0s infinite ease-in-out
 }
 .preloader-spin-2 {
     width:100%;
@@ -701,12 +703,12 @@
     position:absolute;
     top:0;
     left:0;
-    -webkit-animation:edublink-preloader-bounce-animation 2.0s infinite ease-in-out;
-    animation:edublink-preloader-bounce-animation 2.0s infinite ease-in-out;
+    -webkit-animation:proitbridge-preloader-bounce-animation 2.0s infinite ease-in-out;
+    animation:proitbridge-preloader-bounce-animation 2.0s infinite ease-in-out;
     -webkit-animation-delay:-1.0s;
     animation-delay:-1.0s
 }
-@-webkit-keyframes edublink-preloader-bounce-animation {
+@-webkit-keyframes proitbridge-preloader-bounce-animation {
     0%,100% {
         -webkit-transform:scale(0);
         transform:scale(0)
@@ -716,7 +718,7 @@
         transform:scale(1)
     }
 }
-@keyframes edublink-preloader-bounce-animation {
+@keyframes proitbridge-preloader-bounce-animation {
     0%,100% {
         -webkit-transform:scale(0);
         transform:scale(0)
@@ -1092,7 +1094,7 @@ p {
     line-height:var(--line-height-b1);
     font-weight:400;
     color:var(--color-body);
-    margin:0 0 30px
+    margin:0 0 30px;
 }
 @media only screen and (max-width:767px) {
     p {
@@ -1415,7 +1417,7 @@ input[type="radio"]:checked~label::before {
 .bg-lighten04 {
     background-color:var(--color-lighten04)
 }
-.edublink-animated-shape {
+.proitbridge-animated-shape {
     position:relative;
     z-index:9
 }
@@ -1752,7 +1754,7 @@ input[type="radio"]:checked~label::before {
     -webkit-animation:rotateIt 11s linear infinite;
     animation:rotateIt 11s linear infinite
 }
-@-webkit-keyframes edublink-vsm-y-move {
+@-webkit-keyframes proitbridge-vsm-y-move {
     0% {
         -webkit-transform:translate(0,-30%);
         transform:translate(0,-30%)
@@ -1762,7 +1764,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(0,30%)
     }
 }
-@keyframes edublink-vsm-y-move {
+@keyframes proitbridge-vsm-y-move {
     0% {
         -webkit-transform:translate(0,-30%);
         transform:translate(0,-30%)
@@ -1772,7 +1774,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(0,30%)
     }
 }
-@-webkit-keyframes edublink-vsm-y-reverse-move {
+@-webkit-keyframes proitbridge-vsm-y-reverse-move {
     0% {
         -webkit-transform:translate(0,30%);
         transform:translate(0,30%)
@@ -1782,7 +1784,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(0,-30%)
     }
 }
-@keyframes edublink-vsm-y-reverse-move {
+@keyframes proitbridge-vsm-y-reverse-move {
     0% {
         -webkit-transform:translate(0,30%);
         transform:translate(0,30%)
@@ -1792,7 +1794,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(0,-30%)
     }
 }
-@-webkit-keyframes edublink-sm-x-move {
+@-webkit-keyframes proitbridge-sm-x-move {
     0% {
         -webkit-transform:translate(-50%,0);
         transform:translate(-50%,0)
@@ -1802,7 +1804,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(50%,0)
     }
 }
-@keyframes edublink-sm-x-move {
+@keyframes proitbridge-sm-x-move {
     0% {
         -webkit-transform:translate(-50%,0);
         transform:translate(-50%,0)
@@ -1812,7 +1814,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(50%,0)
     }
 }
-@-webkit-keyframes edublink-sm-x-reverse-move {
+@-webkit-keyframes proitbridge-sm-x-reverse-move {
     0% {
         -webkit-transform:translate(50%,0);
         transform:translate(50%,0)
@@ -1822,7 +1824,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(-50%,0)
     }
 }
-@keyframes edublink-sm-x-reverse-move {
+@keyframes proitbridge-sm-x-reverse-move {
     0% {
         -webkit-transform:translate(50%,0);
         transform:translate(50%,0)
@@ -1832,7 +1834,7 @@ input[type="radio"]:checked~label::before {
         transform:translate(-50%,0)
     }
 }
-@-webkit-keyframes edublink-rotate-y {
+@-webkit-keyframes proitbridge-rotate-y {
     0% {
         -webkit-transform:rotate(0deg);
         transform:rotate(0deg)
@@ -1842,7 +1844,7 @@ input[type="radio"]:checked~label::before {
         transform:rotate(-360deg)
     }
 }
-@-webkit-keyframes edublink-rotate-x {
+@-webkit-keyframes proitbridge-rotate-x {
     0% {
         -webkit-transform:rotate(0deg);
         transform:rotate(0deg)
@@ -1852,7 +1854,7 @@ input[type="radio"]:checked~label::before {
         transform:rotate(360deg)
     }
 }
-@keyframes edublink-rotate-x {
+@keyframes proitbridge-rotate-x {
     0% {
         -webkit-transform:rotate(0deg);
         transform:rotate(0deg)
@@ -1862,7 +1864,7 @@ input[type="radio"]:checked~label::before {
         transform:rotate(360deg)
     }
 }
-@keyframes edublink-rotate-y {
+@keyframes proitbridge-rotate-y {
     0% {
         -webkit-transform:rotate(0deg);
         transform:rotate(0deg)
@@ -1872,7 +1874,7 @@ input[type="radio"]:checked~label::before {
         transform:rotate(-360deg)
     }
 }
-@-webkit-keyframes edublink-zoom1 {
+@-webkit-keyframes proitbridge-zoom1 {
     0% {
         -webkit-transform:scale(.9);
         transform:scale(.9)
@@ -1882,7 +1884,7 @@ input[type="radio"]:checked~label::before {
         transform:scale(1.5)
     }
 }
-@-webkit-keyframes edublink-zoom2 {
+@-webkit-keyframes proitbridge-zoom2 {
     0% {
         -webkit-transform:scale(1);
         transform:scale(1)
@@ -1892,7 +1894,7 @@ input[type="radio"]:checked~label::before {
         transform:scale(1.5)
     }
 }
-@keyframes edublink-zoom2 {
+@keyframes proitbridge-zoom2 {
     0% {
         -webkit-transform:scale(1);
         transform:scale(1)
@@ -1902,7 +1904,7 @@ input[type="radio"]:checked~label::before {
         transform:scale(1.5)
     }
 }
-@-webkit-keyframes edublink-zoom1 {
+@-webkit-keyframes proitbridge-zoom1 {
     0% {
         -webkit-transform:scale(1);
         transform:scale(1)
@@ -1912,7 +1914,7 @@ input[type="radio"]:checked~label::before {
         transform:scale(1.25)
     }
 }
-@keyframes edublink-zoom1 {
+@keyframes proitbridge-zoom1 {
     0% {
         -webkit-transform:scale(1);
         transform:scale(1)
@@ -3780,7 +3782,7 @@ a.edu-btn.btn-border:hover,button.edu-btn.btn-border:hover {
     transform:none
 }
 .section-title {
-    margin-bottom:44px
+    margin-bottom: 5px;
 }
 @media only screen and (max-width:767px) {
     .section-title {
@@ -4123,7 +4125,7 @@ a.edu-btn.btn-border:hover,button.edu-btn.btn-border:hover {
 .about-image-gallery .award-status {
     position:absolute;
     right:70px;
-    bottom:0
+    bottom: 10px
 }
 @media only screen and (max-width:479px) {
     .about-image-gallery .award-status {
@@ -4193,6 +4195,9 @@ a.edu-btn.btn-border:hover,button.edu-btn.btn-border:hover {
 }
 .about-content {
     padding-left:30px
+}
+.about-content p{
+    text-align: justify;
 }
 @media only screen and (max-width:991px) {
     .about-content {
@@ -4349,7 +4354,6 @@ a.edu-btn.btn-border:hover,button.edu-btn.btn-border:hover {
 }
 .about-style-3 {
     background-color: var(--color-lighten01);
-    padding:90px 0 120px;
     position:relative
 }
 @media only screen and (min-width:768px) and (max-width:991px) {
@@ -5907,7 +5911,7 @@ a.edu-btn.btn-border:hover,button.edu-btn.btn-border:hover {
     z-index:-1
 }
 .categorie-grid {
-    padding:50px 30px;
+    padding:5px;
     text-align:center;
     border-radius:5px;
     -webkit-transition:var(--transition);
@@ -5933,6 +5937,9 @@ a.edu-btn.btn-border:hover,button.edu-btn.btn-border:hover {
     margin:0 auto 28px;
     -webkit-transition:var(--transition);
     transition:var(--transition)
+}
+.about-page .categorie-grid .content{
+    height: 250px;
 }
 .categorie-grid .content .title {
     margin-bottom:15px;
@@ -8070,7 +8077,7 @@ a.edu-btn.btn-border:hover,button.edu-btn.btn-border:hover {
 }
 .course-view-all {
     text-align:center;
-    margin-top:60px
+    margin-top: 10px
 }
 .course-view-all .view-text {
     margin-bottom:0
@@ -10076,7 +10083,7 @@ body .tpd-size-medium .tpd-content {
     border-radius:120px 120px 0 120px
 }
 .edu-faq-gallery .thumbnail-2 {
-    margin-top:70px
+    margin-top: 20px
 }
 .edu-faq-gallery .thumbnail-2 img {
     border-radius:60px 0 100px
@@ -10582,7 +10589,7 @@ body .tpd-size-medium .tpd-content {
         justify-content:flex-start
     }
 }
-.features-box.features-style-2 .edublink-svg-animate svg path {
+.features-box.features-style-2 .proitbridge-svg-animate svg path {
     stroke:#ffffff!important;
     max-width:38px
 }
@@ -10869,7 +10876,7 @@ body .tpd-size-medium .tpd-content {
 }
 /* Carousel */
 .carousel .carousel-inner{
-    height:90vh;
+    height: 82vh;
 }
 .carousel-inner .carousel-item img{
     color: #ffffff;
@@ -11415,8 +11422,8 @@ body .tpd-size-medium .tpd-content {
     }
 }
 .hero-banner.hero-style-1 .banner-thumbnail .shape-group .shape-1 {
-    -webkit-animation:edublink-sm-x-move 3.5s alternate infinite linear;
-    animation:edublink-sm-x-move 3.5s alternate infinite linear
+    -webkit-animation:proitbridge-sm-x-move 3.5s alternate infinite linear;
+    animation:proitbridge-sm-x-move 3.5s alternate infinite linear
 }
 .hero-banner.hero-style-1 .shape-7 {
     position:absolute;
@@ -13872,7 +13879,7 @@ body .tpd-size-medium .tpd-content {
 .order-payment .form-group input[type="checkbox"],.order-payment .form-group input[type="radio"] {
     width:auto
 }
-.edublink-landing-page #edublink-preloader {
+.proitbridge-landing-page #proitbridge-preloader {
     display:none!important
 }
 .pv-header-style.edu-header .header-mainmenu {
@@ -13897,13 +13904,13 @@ body .tpd-size-medium .tpd-content {
     height:90px;
     line-height:90px
 }
-.pv-header-style .edublink-vue-mobile-popup-menu .mainmenu li.header-btn {
+.pv-header-style .proitbridge-vue-mobile-popup-menu .mainmenu li.header-btn {
     padding-top:30px
 }
-.pv-header-style .edublink-vue-mobile-popup-menu .mainmenu li.header-btn .edu-btn {
+.pv-header-style .proitbridge-vue-mobile-popup-menu .mainmenu li.header-btn .edu-btn {
     padding:0
 }
-.pv-header-style .edublink-vue-mobile-popup-menu .mainmenu li.header-btn .edu-btn:hover {
+.pv-header-style .proitbridge-vue-mobile-popup-menu .mainmenu li.header-btn .edu-btn:hover {
     color:var(--color-white)
 }
 .pv-demo-counterup {
@@ -17728,7 +17735,7 @@ body .tpd-size-medium .tpd-content {
 .edu-header .header-brand img.logo-light {
     /* main page logo */
     display:inline-block;
-    width: 150px;
+    width: 180px;
 }
 .edu-header .header-brand .logo {
     margin-right:40px
@@ -18917,7 +18924,7 @@ body .tpd-size-medium .tpd-content {
     }
 }
 .edu-footer.footer-style-1 {
-    background-color: var(--color-lighten01);
+    background-color: var(--footer-bg);
 }
 .edu-footer.footer-style-1 .footer-top .edu-footer-widget .logo a img.logo-dark {
     display:none
@@ -19108,7 +19115,8 @@ body .tpd-size-medium .tpd-content {
     color:#bababa
 }
 .edu-footer.footer-lighten .widget-title {
-    font-weight:var(--p-bold)
+    font-weight:var(--p-bold);
+    color: #ffffff;
 }
 .edu-footer.footer-lighten p {
     color:var(--footer-text)
@@ -19310,7 +19318,7 @@ body .tpd-size-medium .tpd-content {
     border-top:1px solid #1f2020
 }
 .footer-lighten .copyright-area {
-    background-color:var(--bg-color-2);
+    background-color: var(--footer-bg);
 }
 .footer-lighten .copyright-area p {    
     color: #ffffff;
@@ -20723,7 +20731,7 @@ body.dark-mode {
 .dark-mode .cta-banner-3 .newsletter-form .input-group .form-control::-ms-input-placeholder {
     color:var(--color-white)
 }
-.dark-mode .hero-banner .banner-content p,.dark-mode .popup-mobile-menu .inner .header-top .close-menu .close-button,.dark-mode .edublink-vue-mobile-popup-menu .inner .header-top .close-menu .close-button,.dark-mode .header-action .mobile-menu-bar .hamberger-button,.dark-mode .edu-course .content .course-rating .rating-count,.dark-mode .edu-course .content .course-meta li,.dark-mode .event-details .details-content .event-meta li a,.dark-mode .edu-sorting-area .sorting-right .layout-switcher label,.dark-mode .course-details-content .course-enroll-box .single-item .login-btn a,.dark-mode .course-details-3 .nav-tabs .nav-item .nav-link.active,.dark-mode .course-details-3 .nav-tabs .nav-item .nav-link:hover,.dark-mode .header-action .search-bar .input-group .form-control,.dark-mode .team-details-content .main-info .team-meta li,.dark-mode .team-details-content .main-info .team-meta li .rating-count,.dark-mode .team-details-content .contact-info ul li span,.dark-mode .blog-details-content>ul li,.dark-mode .blog-meta li,.dark-mode input[type=text],.dark-mode input[type=password],.dark-mode input[type=email],.dark-mode input[type=number],.dark-mode input[type=tel],.dark-mode textarea,.dark-mode a.edu-btn.btn-border,.dark-mode button.edu-btn.btn-border,.dark-mode .edu-search-popup .inner .search-form .submit-button,.dark-mode .edu-search-popup .close-button .close-trigger,.dark-mode .about-style-3 .about-content .nav-tabs .nav-link,.dark-mode .isotop-button button,.dark-mode .blog-meta li a,.dark-mode .edu-course .hover-content-aside .content .course-feature ul li:before,.dark-mode .edu-breadcrumb-area .edu-breadcrumb li.breadcrumb-item,.dark-mode .edu-breadcrumb-area .edu-breadcrumb li.breadcrumb-item a,.dark-mode .edu-breadcrumb-area .edu-breadcrumb li.separator i,.dark-mode .faq-page-nav .nav-tabs .nav-link,.dark-mode .edu-course-widget.widget-course-summery .content .course-item li,.dark-mode .event-details .details-content ul li,.dark-mode .pricing-table .pricing-header .price-wrap .amount,.dark-mode .pricing-table .pricing-body .list-item li,.dark-mode .edu-pagination li a,.dark-mode .product-details-area .content .product-rating .rating-count,.dark-mode .tag-list a,.dark-mode .form-group label,.dark-mode select,.dark-mode .edu-breadcrumb-area .course-meta li,.dark-mode .edu-product .inner>.thumbnail .product-hover-info ul li a,.dark-mode .edu-sorting-area .sorting-right .edu-sorting .icon,.dark-mode .edu-product .inner .content .product-rating .rating-count,.dark-mode .edu-blog-widget.widget-categories .category-list li a,.dark-mode .product-description-nav .nav-item button.nav-link:hover,.dark-mode .course-details-content .entry-content .course-meta li,.dark-mode .product-description-nav .nav-item button.nav-link.active,.dark-mode .product-details-area .content .product-action .add-to-cart-btn .wishlist-btn i,.dark-mode .product-details-area .content .product-feature li span,.dark-mode .cart-table thead th,.dark-mode .cart-table tbody td.product-remove .remove-wishlist,.dark-mode .pv-demo-counterup .counterup-wrap .edu-counterup .title,.dark-mode .order-summery .summery-table tbody td,.dark-mode .order-summery .summery-table .order-total td:last-child,.dark-mode a,.dark-mode a.edu-btn:hover,.dark-mode button.edu-btn:hover,.dark-mode .course-layout-five-tooltip-content .content .course-feature ul li:before,.dark-mode .cta-banner-3 .newsletter-form .input-group .form-control,.dark-mode .cta-banner-3 .newsletter-form .input-group .form-control::placeholder,.dark-mode .footer-light .copyright-area p,.dark-mode .header-action .search-bar .input-group .search-btn,.dark-mode .hero-banner.hero-style-8 .banner-content .banner-search .input-group .search-btn,.dark-mode .categorie-grid.categorie-style-3 .content .title,.dark-mode .categorie-area-5 .categorie-grid .content .title {
+.dark-mode .hero-banner .banner-content p,.dark-mode .popup-mobile-menu .inner .header-top .close-menu .close-button,.dark-mode .proitbridge-vue-mobile-popup-menu .inner .header-top .close-menu .close-button,.dark-mode .header-action .mobile-menu-bar .hamberger-button,.dark-mode .edu-course .content .course-rating .rating-count,.dark-mode .edu-course .content .course-meta li,.dark-mode .event-details .details-content .event-meta li a,.dark-mode .edu-sorting-area .sorting-right .layout-switcher label,.dark-mode .course-details-content .course-enroll-box .single-item .login-btn a,.dark-mode .course-details-3 .nav-tabs .nav-item .nav-link.active,.dark-mode .course-details-3 .nav-tabs .nav-item .nav-link:hover,.dark-mode .header-action .search-bar .input-group .form-control,.dark-mode .team-details-content .main-info .team-meta li,.dark-mode .team-details-content .main-info .team-meta li .rating-count,.dark-mode .team-details-content .contact-info ul li span,.dark-mode .blog-details-content>ul li,.dark-mode .blog-meta li,.dark-mode input[type=text],.dark-mode input[type=password],.dark-mode input[type=email],.dark-mode input[type=number],.dark-mode input[type=tel],.dark-mode textarea,.dark-mode a.edu-btn.btn-border,.dark-mode button.edu-btn.btn-border,.dark-mode .edu-search-popup .inner .search-form .submit-button,.dark-mode .edu-search-popup .close-button .close-trigger,.dark-mode .about-style-3 .about-content .nav-tabs .nav-link,.dark-mode .isotop-button button,.dark-mode .blog-meta li a,.dark-mode .edu-course .hover-content-aside .content .course-feature ul li:before,.dark-mode .edu-breadcrumb-area .edu-breadcrumb li.breadcrumb-item,.dark-mode .edu-breadcrumb-area .edu-breadcrumb li.breadcrumb-item a,.dark-mode .edu-breadcrumb-area .edu-breadcrumb li.separator i,.dark-mode .faq-page-nav .nav-tabs .nav-link,.dark-mode .edu-course-widget.widget-course-summery .content .course-item li,.dark-mode .event-details .details-content ul li,.dark-mode .pricing-table .pricing-header .price-wrap .amount,.dark-mode .pricing-table .pricing-body .list-item li,.dark-mode .edu-pagination li a,.dark-mode .product-details-area .content .product-rating .rating-count,.dark-mode .tag-list a,.dark-mode .form-group label,.dark-mode select,.dark-mode .edu-breadcrumb-area .course-meta li,.dark-mode .edu-product .inner>.thumbnail .product-hover-info ul li a,.dark-mode .edu-sorting-area .sorting-right .edu-sorting .icon,.dark-mode .edu-product .inner .content .product-rating .rating-count,.dark-mode .edu-blog-widget.widget-categories .category-list li a,.dark-mode .product-description-nav .nav-item button.nav-link:hover,.dark-mode .course-details-content .entry-content .course-meta li,.dark-mode .product-description-nav .nav-item button.nav-link.active,.dark-mode .product-details-area .content .product-action .add-to-cart-btn .wishlist-btn i,.dark-mode .product-details-area .content .product-feature li span,.dark-mode .cart-table thead th,.dark-mode .cart-table tbody td.product-remove .remove-wishlist,.dark-mode .pv-demo-counterup .counterup-wrap .edu-counterup .title,.dark-mode .order-summery .summery-table tbody td,.dark-mode .order-summery .summery-table .order-total td:last-child,.dark-mode a,.dark-mode a.edu-btn:hover,.dark-mode button.edu-btn:hover,.dark-mode .course-layout-five-tooltip-content .content .course-feature ul li:before,.dark-mode .cta-banner-3 .newsletter-form .input-group .form-control,.dark-mode .cta-banner-3 .newsletter-form .input-group .form-control::placeholder,.dark-mode .footer-light .copyright-area p,.dark-mode .header-action .search-bar .input-group .search-btn,.dark-mode .hero-banner.hero-style-8 .banner-content .banner-search .input-group .search-btn,.dark-mode .categorie-grid.categorie-style-3 .content .title,.dark-mode .categorie-area-5 .categorie-grid .content .title {
     color:var(--color-white)
 }
 .dark-mode ul li a:hover,.dark-mode .edu-blog-widget.widget-categories .category-list li a:hover,.dark-mode a:hover,.dark-mode a.btn-transparent:hover,.dark-mode button.btn-transparent:hover,.dark-mode .course-details-content .course-enroll-box .single-item .login-btn a:hover,.dark-mode .social-share.icon-transparent li a:hover,.dark-mode .hero-banner.hero-style-2 .banner-gallery .online-support .inner .content .title a:hover,.dark-mode .hero-banner.hero-style-4 .banner-gallery .online-support .inner .content .title a:hover,.dark-mode .edu-team-grid.team-style-3 .content .title a:hover,.dark-mode .edu-breadcrumb-area .edu-breadcrumb li.breadcrumb-item a:hover,.dark-mode .popup-mobile-menu .mainmenu li a:hover,.dark-mode .login-form-box a,.dark-mode .edu-course.course-style-4 .content .title a:hover,.dark-mode .faq-page-nav .nav-tabs .nav-link.active,.dark-mode .edu-footer.footer-style-7 .footer-top .edu-footer-widget .inner .footer-link a:hover,.dark-mode .edu-footer.footer-style-7 .footer-top .edu-footer-widget .inner .widget-information ul li a:hover {
@@ -20762,7 +20770,7 @@ body.dark-mode {
 .dark-mode .product-details-area .content .product-action .add-to-cart-btn .wishlist-btn:hover {
     border-color:var(--color-secondary)
 }
-.dark-mode .edu-campus-area .campus-image-gallery .shape-1 span,.dark-mode .edu-campus-area .campus-content .shape-4 span,.dark-mode .edu-event-area .shape-group li.shape-2 span,.dark-mode .edublink-vue-mobile-popup-menu .inner .header-top,.dark-mode .edublink-vue-mobile-popup-menu .mainmenu li+li,.dark-mode .about-style-3 .about-image-gallery .shape-group li.shape-4 span,.dark-mode .home-four-course .shape-group .shape-2 span,.dark-mode .hero-banner.hero-style-4 .shape-group li.shape-8 span,.dark-mode .about-style-4 .about-image-gallery .shape-group .shape-4 span,.dark-mode .why-choose-area-2 .shape-group li.shape-1 span,.dark-mode .why-choose-area-2 .shape-group li.shape-3 span,.dark-mode .team-area-5 .shape-group li.shape-3 span,.dark-mode .team-area-5 .shape-group li.shape-1 span,.dark-mode .why-choose-area-3 .shape-group li.shape-1 span,.dark-mode .edu-breadcrumb-area .shape-group li.shape-1,.dark-mode .edu-breadcrumb-area .shape-group li.shape-4,.dark-mode .edu-event-list.event-list-2,.dark-mode .popup-mobile-menu .inner .header-top,.dark-mode .edu-blog-widget.widget-search .blog-search input,.dark-mode .login-form-box .form-group input,.dark-mode .tag-list a,.dark-mode .edu-product:hover .inner .thumbnail a,.dark-mode .pro-qty,.dark-mode .product-details-area .content .product-action .add-to-cart-btn .wishlist-btn,.dark-mode .product-description-nav,.dark-mode .product-description-content .comment-area,.dark-mode .product-details-area .thumbnail,.dark-mode .checkout-notice .coupn-box,.dark-mode .order-summery.checkout-summery .summery-table-wrap,.dark-mode .checkout-billing .form-group select,.dark-mode .edu-course-widget.widget-course-summery .content .course-item li,.dark-mode .course-details-content .nav-tabs,.dark-mode .order-payment,.dark-mode a.edu-btn.btn-border,.dark-mode .course-curriculam .course-lesson ul li:first-child,.dark-mode .course-curriculam .course-lesson ul li,.dark-mode .course-curriculam .course-lesson,.dark-mode .social-share li a,.dark-mode .about-style-3 .shape-group li.shape-6 span,.dark-mode .footer-dark .copyright-area,.dark-mode .comment-list-wrapper .comment+.comment,.dark-mode .course-overview .border-box,.dark-mode .edu-accordion .accordion-item,.dark-mode .blog-details-content,.dark-mode .course-review .border-box,.dark-mode .course-review .border-box .comment-area,.dark-mode .edu-blog-widget.widget-latest-post .latest-post,.dark-mode .contact-form.form-style-2 .form-group input,.dark-mode .contact-form.form-style-2 .form-group textarea,.dark-mode .contact-form-area .shape-group li.shape-3 span,.dark-mode .pv-courses-demo .shape-group li.shape-5 span,.dark-mode .testimonial-area-4 .swiper-navigation .swiper-btn-nxt,.dark-mode .testimonial-area-4 .swiper-navigation .swiper-btn-prv,.dark-mode .course-sidebar-2 .edu-course-widget .inner,.dark-mode .hero-banner.hero-style-8 .shape-group li.shape-5 span,.dark-mode .course-area-8 .shape-group li.shape-2 span,.dark-mode .hero-banner.hero-style-9 .slider .container .shape-group li.shape-1 span,.dark-mode button.edu-btn.btn-border,.dark-mode .edu-footer.footer-style-7 .copyright-area {
+.dark-mode .edu-campus-area .campus-image-gallery .shape-1 span,.dark-mode .edu-campus-area .campus-content .shape-4 span,.dark-mode .edu-event-area .shape-group li.shape-2 span,.dark-mode .proitbridge-vue-mobile-popup-menu .inner .header-top,.dark-mode .proitbridge-vue-mobile-popup-menu .mainmenu li+li,.dark-mode .about-style-3 .about-image-gallery .shape-group li.shape-4 span,.dark-mode .home-four-course .shape-group .shape-2 span,.dark-mode .hero-banner.hero-style-4 .shape-group li.shape-8 span,.dark-mode .about-style-4 .about-image-gallery .shape-group .shape-4 span,.dark-mode .why-choose-area-2 .shape-group li.shape-1 span,.dark-mode .why-choose-area-2 .shape-group li.shape-3 span,.dark-mode .team-area-5 .shape-group li.shape-3 span,.dark-mode .team-area-5 .shape-group li.shape-1 span,.dark-mode .why-choose-area-3 .shape-group li.shape-1 span,.dark-mode .edu-breadcrumb-area .shape-group li.shape-1,.dark-mode .edu-breadcrumb-area .shape-group li.shape-4,.dark-mode .edu-event-list.event-list-2,.dark-mode .popup-mobile-menu .inner .header-top,.dark-mode .edu-blog-widget.widget-search .blog-search input,.dark-mode .login-form-box .form-group input,.dark-mode .tag-list a,.dark-mode .edu-product:hover .inner .thumbnail a,.dark-mode .pro-qty,.dark-mode .product-details-area .content .product-action .add-to-cart-btn .wishlist-btn,.dark-mode .product-description-nav,.dark-mode .product-description-content .comment-area,.dark-mode .product-details-area .thumbnail,.dark-mode .checkout-notice .coupn-box,.dark-mode .order-summery.checkout-summery .summery-table-wrap,.dark-mode .checkout-billing .form-group select,.dark-mode .edu-course-widget.widget-course-summery .content .course-item li,.dark-mode .course-details-content .nav-tabs,.dark-mode .order-payment,.dark-mode a.edu-btn.btn-border,.dark-mode .course-curriculam .course-lesson ul li:first-child,.dark-mode .course-curriculam .course-lesson ul li,.dark-mode .course-curriculam .course-lesson,.dark-mode .social-share li a,.dark-mode .about-style-3 .shape-group li.shape-6 span,.dark-mode .footer-dark .copyright-area,.dark-mode .comment-list-wrapper .comment+.comment,.dark-mode .course-overview .border-box,.dark-mode .edu-accordion .accordion-item,.dark-mode .blog-details-content,.dark-mode .course-review .border-box,.dark-mode .course-review .border-box .comment-area,.dark-mode .edu-blog-widget.widget-latest-post .latest-post,.dark-mode .contact-form.form-style-2 .form-group input,.dark-mode .contact-form.form-style-2 .form-group textarea,.dark-mode .contact-form-area .shape-group li.shape-3 span,.dark-mode .pv-courses-demo .shape-group li.shape-5 span,.dark-mode .testimonial-area-4 .swiper-navigation .swiper-btn-nxt,.dark-mode .testimonial-area-4 .swiper-navigation .swiper-btn-prv,.dark-mode .course-sidebar-2 .edu-course-widget .inner,.dark-mode .hero-banner.hero-style-8 .shape-group li.shape-5 span,.dark-mode .course-area-8 .shape-group li.shape-2 span,.dark-mode .hero-banner.hero-style-9 .slider .container .shape-group li.shape-1 span,.dark-mode button.edu-btn.btn-border,.dark-mode .edu-footer.footer-style-7 .copyright-area {
     border-color:var(--dark-color-border)
 }
 .dark-mode .pv-demo-counterup .counterup-wrap .edu-counterup.border-end {
@@ -20865,10 +20873,10 @@ body.dark-mode {
 .dark-mode .edu-pagination li:hover a {
     color:var(--color-white)
 }
-.dark-mode #edublink-preloader {
+.dark-mode #proitbridge-preloader {
     background:var(--dark-bg-color)
 }
-.dark-mode #edublink-preloader .preloader-close-btn-wraper .preloader-close-btn {
+.dark-mode #proitbridge-preloader .preloader-close-btn-wraper .preloader-close-btn {
     background:#1C252F;
     color:var(--color-white)
 }
@@ -24058,7 +24066,6 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 3px;
     z-index: 100;
 }
 .phone-icon{
@@ -24080,7 +24087,6 @@ html[dir="rtl"] .swiper-testimonial-slider-wrapper .swiper-slide.swiper-slide-vi
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 3px;
     z-index: 100;
 }
 
